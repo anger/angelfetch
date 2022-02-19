@@ -1,0 +1,46 @@
+#!/bin/sh
+
+## Angel Fetch
+## hostname
+read -r host < /proc/sys/kernel/hostname
+
+## os
+read -r kernel < /proc/sys/kernel/osrelease
+. /etc/os-release
+
+## terminal
+terminal=$TERM
+
+
+## kernel
+read -r _ _ version _ < /proc/version
+ke=${version%%-*}
+
+
+## uptime
+UPTIME=$(uptime -p) 
+
+
+## colors
+txtmag='[0;35m' # Magenta
+txtcyn='[0;36m' # Cyan
+txtwht='[0;37m' # White
+txtred='[0;31m' # Red
+txtgrn='[0;32m' # Green
+txtylw='[0;33m' # Yellow
+txtblu='[0;34m' # Blue
+txtpur='[0;35m' # Purple
+reset='[0m' # Reset
+
+## output
+printf '%s\n' "
+  ${txtmag}♥️ ${txtcyn}operating system${txtwht} ⇢ ${PRETTY_NAME}
+  ${txtmag}♥️ ${txtcyn}shell${txtwht} ⇢ ${SHELL##*/}
+  ${txtmag}♥️ ${txtcyn}kernal${txtwht} ⇢ ${ke}
+  ${txtmag}♥️ ${txtcyn}terminal${txtwht} ⇢ ${terminal}
+  ${txtmag}♥️ ${txtcyn}uptime${txtwht} ⇢ ${UPTIME}
+
+   _
+ {\o/}
+  /_\  welcome to ${txtylw}${host}${reset}, ${txtmag}${USER}${reset}. have a wonderful day. 
+"
