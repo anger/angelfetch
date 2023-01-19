@@ -5,7 +5,7 @@
 
 <h1 align="center">Angel Fetch</h1>
 <p align="center">An angel themed fetch script</p>
-
+<p align="center">Written with BASH</p>
 <p align="center">
 <a href="./license"><img src="https://shields.io/github/license/anger/angelfetch?style=for-the-badge&logo=appveyor"></a>
 </p>
