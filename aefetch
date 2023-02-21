@@ -4,24 +4,24 @@
 ## hostname
 read -r host < /proc/sys/kernel/hostname
 
-## os
+## operating sys
 read -r kernel < /proc/sys/kernel/osrelease
 . /etc/os-release
 
-## terminal
+## terminal ;o
 terminal=$TERM
 
 
-## kernel
+## kernel ;|
 read -r _ _ version _ < /proc/version
 ke=${version%%-*}
 
 
-## uptime
+## uptime ;)
 UPTIME=$(uptime -p) 
 
 
-## colors
+## colors spoooky!
 txtmag='[0;35m' # Magenta
 txtcyn='[0;36m' # Cyan
 txtwht='[0;37m' # White
