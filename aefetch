@@ -34,11 +34,11 @@ reset='[0m' # Reset
 
 ## output
 printf '%s\n' "
-  ${txtmag}♥️ ${txtcyn}operating system${txtwht} ⇢ ${PRETTY_NAME}
-  ${txtmag}♥️ ${txtcyn}shell${txtwht} ⇢ ${SHELL##*/}
-  ${txtmag}♥️ ${txtcyn}kernal${txtwht} ⇢ ${ke}
-  ${txtmag}♥️ ${txtcyn}terminal${txtwht} ⇢ ${terminal}
-  ${txtmag}♥️ ${txtcyn}uptime${txtwht} ⇢ ${UPTIME}
+  ${txtmag}✝ ${txtcyn}operating system${txtwht} ⇢ ${PRETTY_NAME}
+  ${txtmag}✝ ${txtcyn}shell${txtwht} ⇢ ${SHELL##*/}
+  ${txtmag}✝ ${txtcyn}kernal${txtwht} ⇢ ${ke}
+  ${txtmag}✝ ${txtcyn}terminal${txtwht} ⇢ ${terminal}
+  ${txtmag}✝ ${txtcyn}uptime${txtwht} ⇢ ${UPTIME}
 
    _
  {\o/}
