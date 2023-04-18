@@ -14,3 +14,4 @@ cd ..
 sudo rm -rf angelfetch
 
 echo "❥ Installation has finished. Run 'aefetch' to activate angelfetch."
+echo "❥ Thank you for installing!"
